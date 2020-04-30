@@ -7,6 +7,9 @@ public function search();
 public function update();
 public function removeOne();
 public function removeAll();
-	
+
+//we added these methods for lab2
+public function validateForm();
+public function createFormErrorSessions();	
 }
 ?>
