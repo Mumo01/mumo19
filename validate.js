@@ -1,12 +1,14 @@
-//function to validate form
 function validateForm() {
-	var fname = document.forms["user_details"]["first_name"].value;
-	var lname = document.forms["user_details"]["last_name"].value;
-	var city = document.forms["user_details"]["city_name"].value;
-	//user _details is the name of the form
-	if(fname == null || lname == "" || city==""){
-		alert("all details required were not supplied");
-		return false;
-	}
-	return true;
+ var fname = document.getElementsByName("first_name")[0].value;
+ var lname = document.getElementsByName("last_name")[0].value;
+ var city = document.getElementsByName("city_name")[0].value;
+
+ if (fname == "" || lname == "" || city == "") {
+  alert("Kindly Fill in All Values");
+  return false;
+ }
+
+
+ alert("Your Record has successfully added")
+ return true;
 }
